@@ -11,7 +11,31 @@ export function* rootSagas() {
 
   yield all([
     //Nghiệp vụ theo dõi các action saga todolist
+    bookSaga.followGetListBookSaga(),
+    bookSaga.followDeleteBookSaga(),
+  bookSaga.followUpdateBookSaga(),
+  bookSaga.followCreateBookSaga(),
+    authorSaga.followGetListAuthorSaga(),
+    authorSaga.followCreateAuthorSaga(),
+    authorSaga.followUpdateAuthorSaga(),
+    authorSaga.followDeleteAuthorSaga(),
+    bookshelfSaga.followGetListBookshelfSaga(),
+    publisherSaga.followGetListPublisherSaga(),
+    publisherSaga.followCreatePublisherSaga(),
+    publisherSaga.followDeletePublisherSaga(),
+    publisherSaga.followUpdatePublisherSaga(),
+    categorySaga.followGetListCategorySaga(),
+    categorySaga.followCreateCategorySaga(),
+    categorySaga.followUpdateCategorySaga(),
+    categorySaga.followDeleteCategorySaga(),
+    bookSaga.followCreateBookCardSaga(),
+    bookSaga.followCreateBorrowBookSaga(),
 
+    readerSaga.followGetListReaderSaga(),
+    readerSaga.followCreateReaderSaga(),
+    readerSaga.followUpdateReaderSaga(),
+    readerSaga.followDeleteReaderSaga(),
+    genderSaga.followGetListGenderSaga(),
  
 
     
